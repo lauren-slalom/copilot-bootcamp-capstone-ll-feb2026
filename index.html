@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Mood Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌈 Daily Mood Tracker</h1>
+            <p class="subtitle">Track your mood with colors</p>
+        </header>
+
+        <main>
+            <section class="mood-input">
+                <h2>How are you feeling today?</h2>
+                <p class="date-display" id="currentDate"></p>
+                
+                <div class="color-palette">
+                    <button class="color-btn" data-color="#FF6B6B" data-mood="Energetic" style="background-color: #FF6B6B;" title="Energetic"></button>
+                    <button class="color-btn" data-color="#FFA500" data-mood="Happy" style="background-color: #FFA500;" title="Happy"></button>
+                    <button class="color-btn" data-color="#FFD93D" data-mood="Optimistic" style="background-color: #FFD93D;" title="Optimistic"></button>
+                    <button class="color-btn" data-color="#6BCB77" data-mood="Calm" style="background-color: #6BCB77;" title="Calm"></button>
+                    <button class="color-btn" data-color="#4D96FF" data-mood="Peaceful" style="background-color: #4D96FF;" title="Peaceful"></button>
+                    <button class="color-btn" data-color="#9D84B7" data-mood="Reflective" style="background-color: #9D84B7;" title="Reflective"></button>
+                    <button class="color-btn" data-color="#C3ACD0" data-mood="Relaxed" style="background-color: #C3ACD0;" title="Relaxed"></button>
+                    <button class="color-btn" data-color="#95A5A6" data-mood="Neutral" style="background-color: #95A5A6;" title="Neutral"></button>
+                </div>
+                
+                <div id="selectedMood" class="selected-mood"></div>
+            </section>
+
+            <section class="mood-history">
+                <h2>Your Mood History</h2>
+                <div id="moodTimeline" class="mood-timeline">
+                    <p class="empty-state">No moods tracked yet. Select a color above to start!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <button id="clearHistory" class="clear-btn">Clear History</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
